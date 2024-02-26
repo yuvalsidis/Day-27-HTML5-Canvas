@@ -1,2 +1,4 @@
 /* COMPONENTS */
-@import url(components/main-content.css)
+@import url(components/main-content.css);
+@import url(components/main-header.css);
+@import url(components/main-footer.css);
