@@ -1,0 +1,9 @@
+/* Main Layout */
+.main-layout{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
