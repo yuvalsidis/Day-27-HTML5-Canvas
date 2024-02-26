@@ -12,8 +12,16 @@
     </header>
 
     <main class="main-content">
-        <canvas class="canvas" width="450" height="450" onClick="onDrew(event)"></canvas>
+        <canvas class="canvas" width="450" height="450" onClick="onDraw(event)"></canvas>
     </main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+        <div class="auctions">
+            <button class="currect-mode-button" onClick="onSetShape('tringle')">Tringle</button>
+            <button class="currect-mode-button" onClick="onSetShape('rect')">Tringle</button>
+            <button class="currect-mode-button" onClick="onSetShape('text')">Tringle</button>
+            <button class="currect-mode-button" onClick="onSetShape('line')">Tringle</button>
+            <button class="currect-mode-button" onClick="onClearCanvas('clear')">Tringle</button>
+        </div>
+    </footer>
 </body>
 </html>
