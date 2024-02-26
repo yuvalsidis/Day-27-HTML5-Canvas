@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
-<body class="main-layout">
+
+<body class="main-layout" onclick="onInit()">
     <header class="main-header">
         <h1 class="title">Hello HTML Canvas</h1>
     </header>
 
     <main class="main-content">
-        <canvas class="canvas" width="450" height="450" onClick="onDraw(event)"></canvas>
+        <canvas class="canvas" width="450" height="450" onclick="onDraw(event)"></canvas>
     </main>
     <footer class="main-footer">
         <div class="auctions">
-            <button class="currect-mode-button" onClick="onSetShape('tringle')">Tringle</button>
-            <button class="currect-mode-button" onClick="onSetShape('rect')">Tringle</button>
-            <button class="currect-mode-button" onClick="onSetShape('text')">Tringle</button>
-            <button class="currect-mode-button" onClick="onSetShape('line')">Tringle</button>
-            <button class="currect-mode-button" onClick="onClearCanvas('clear')">Tringle</button>
+            <button class="currect-mode-button" onclick="onSetShape('tringle')">Tringle</button>
+            <button class="currect-mode-button" onclick="onSetShape('rect')">Rect</button>
+            <button class="currect-mode-button" onclick="onSetShape('text')">Text</button>
+            <button class="currect-mode-button" onclick="onSetShape('line')">Line</button>
+            <button class="currect-mode-button" onclick="onClearCanvas('clear')">Clear</button>
         </div>
     </footer>
+    <script src="/Exercise1again/js/main.js"></script>
 </body>
+
 </html>
