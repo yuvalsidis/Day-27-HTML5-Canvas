@@ -7,6 +7,8 @@ function onInit() {
     gElCanvas = document.querySelector('.main-canvas')
     gCtx = gElCanvas.getContext('2d')
     console.log(gElCanvas, gCtx)
+
+    window.addEventListener('resize', () => resizeCanvas())
 }
 
 function onSelectImg(elImg, imageName) {
@@ -25,4 +27,19 @@ function drawImage(imageName){
 
     img.onload = () =>
         gCtx.drawImage(img ,0, 0,gElCanvas.width, gElCanvas.height) 
+}
+
+function downloadCanvas(elLink){
+    elLink.download = 'my-img'
+
+    const dataUrl = gElCanvas.toDataURL()
+    elLink.href = dataUrl
+
+}
+
+function resizeCanvas() {
+    elCanvasContainer = document.querySelector('.canvas-container')
+    gElCanvas.width = elCanvasContainer.offsetWidth
+    console.log(elCanvasContainer.clientWidth)
+    console.log(gElCanvas.width)
 }

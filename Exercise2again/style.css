@@ -17,3 +17,13 @@
 .canvas-container .main-canvas{
     border: 1px solid black;
 }
+
+.canvas-container {
+    display: flex;
+    flex-flow: column;
+    width: 80vw;
+    background-color: lightsteelblue;
+    border: 1px solid lightgray;
+    margin: 10px auto;
+    gap: 15px
+}
