@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-layout{
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.main-layout >:first-child{
+    margin-top: 30px;
+}
+
+.canvas-container .main-canvas{
+    border: 1px solid black;
+}

@@ -6,12 +6,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="main-layout" onload="onInit()">
+
+    <h1 class="main title">Canvas Ex2</h1>
+    <div class="canvas-container">
+        <canvas class="main-canvas" height="400" width="400" onclick="onDraw()"></canvas>
+    </div>
+
+    <h1>Select an image :</h3>
+        <section> 
+            <img src="img/square.jpg" onclick="onSelectImg(this)">
+            <img src="img/tall.jpg" onclick="onSelectImg(this)">
+            <img src="img/wide.jpg" onclick="onSelectImg(this)">
+        </section>
+
+
+
     
-
-
-
-
     <script src="main.js"></script>
 </body>
 </html>
