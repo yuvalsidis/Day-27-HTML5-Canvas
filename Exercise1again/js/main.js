@@ -23,7 +23,7 @@ function onDraw(ev) {
             drawTringle(offsetX,offsetY)
             break   
         case 'text':
-            drawText(offsetX,offsetY)    
+            drawText(offsetX,offsetY, 'Hello')    
         default:
             return
     }
@@ -38,6 +38,9 @@ function drawLine(x, y, xEnd, yEnd) {
     gCtx.stroke()
 }
 
+function onClearCanvas() {
+    gCtx.clearRect(0, 0, gElCanvas.width, gElCanvas.height)
+}
 function drawRect(x, y) {
     gCtx.beginPath()
     gCtx.moveTo(x,y)
@@ -65,14 +68,20 @@ function drawTringle(x, y) {
 
 function drawText(x,y, text){
     gCtx.beginPath()
-    gCtx.lineWidth = 2
-
-    
+    gCtx.moveTo(x,y)
+    gCtx.lineWidth = 1
+    gCtx.fillStyle = 'lightblue'
+    gCtx.font = '50px Ariel'
+    gCtx.textAlign = 'center'
+    gCtx.fillText(text, x, y)
+    gCtx.strokeText(text, x, y)    
 }
 
 function onSetShape(str) {
     gCurrShape = str
 }
+
+
 
 
 
